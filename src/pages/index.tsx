@@ -52,12 +52,12 @@ export default function Home() {
           </div>
           {/* Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="px-4 py-2 text-[#00A674] hover:text-[#008c61] transition-colors">
+            <Link href = 'http://localhost:7010/auth/google' className="px-4 py-2 text-[#00A674] hover:text-[#008c61] transition-colors">
               Log In
-            </button>
-            <button className="px-4 py-2 bg-[#00A674] text-white rounded-md hover:bg-[#008c61] transition-colors">
+            </Link>
+            <Link href = 'http://localhost:7010/auth/google' className="px-4 py-2 bg-[#00A674] text-white rounded-md hover:bg-[#008c61] transition-colors">
               Sign Up
-            </button>
+            </Link>
           </div>
           {/* Mobile Menu Button */}
           <div className="md:hidden">
