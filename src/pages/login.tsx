@@ -1,7 +1,7 @@
 import { API_URL, GOOGLE_AUTH_ROUTE } from "@/constants";
 import Link from "next/link";
 
-export default function Public() {
+export default function Login() {
     const GOOGLE_AUTH_URL = API_URL + GOOGLE_AUTH_ROUTE;
       return (
           <>

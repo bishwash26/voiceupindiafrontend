@@ -1,10 +1,11 @@
-import withProtectedRoute from "@/components/Auth/withWrappedProtectedRoute";
-import { useAuth } from "@/context/AuthContext";
-import Link from "next/link";
+
+import { useAuth } from "@/hooks/useAuth";
+import { withAuth } from "@/middleware/withAuth";
 
 const Home = () => {
   const { user } = useAuth();
-  return (<div>{}</div>)
+  console.log("The user is"+user);
+  return (<div>test</div>)
 }
 
-export default withProtectedRoute(Home);
+export default withAuth(Home);
